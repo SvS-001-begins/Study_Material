@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightManagementPanel.java (ui) — Airline Study Hub</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/geist" rel="stylesheet">
+</head>
+<body>
+    <a href="#workspaceBody" class="skip-link">Skip to main content</a>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="Project file explorer and study navigation">
+            <div class="sidebar-header">
+                <div class="brand-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">flight_takeoff</span>
+                </div>
+                <div class="brand-text">
+                    <h1>Airline Study Hub</h1>
+                    <p>Standalone File Study</p>
+                </div>
+            </div>
+            <div class="sidebar-search">
+                <div class="search-input-wrap">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                    <input type="search" id="fileSearch" class="search-input" placeholder="Search classes, methods, OOP..." aria-label="Search files and methods">
+                </div>
+            </div>
+            <nav class="sidebar-nav" id="sidebarNav" aria-label="Package and file list"></nav>
+            <div class="sidebar-footer">
+                <div class="footer-meta">
+                    <a href="../index.html" style="color:var(--primary);text-decoration:none;font-weight:600;">← Back to Main Portal</a>
+                </div>
+                <button class="icon-btn" id="themeToggle" title="Toggle Dark/Light Theme" aria-label="Toggle Dark/Light Theme">
+                    <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="main-area">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <span class="breadcrumb-pkg" id="breadcrumbPkg">FILE</span>
+                    <h2 class="topbar-title" id="topbarTitle">ui/FlightManagementPanel.java</h2>
+                </div>
+                <div class="topbar-actions">
+                    <div class="view-switcher" id="viewSwitcher" role="group" aria-label="View mode">
+                        <button class="view-btn active" data-mode="split">
+                            <span class="material-symbols-outlined">vertical_split</span>
+                            <span>Split View</span>
+                        </button>
+                        <button class="view-btn" data-mode="code">
+                            <span class="material-symbols-outlined">code</span>
+                            <span>Code Only</span>
+                        </button>
+                        <button class="view-btn" data-mode="study">
+                            <span class="material-symbols-outlined">menu_book</span>
+                            <span>Study Guide Only</span>
+                        </button>
+                    </div>
+                    <div id="fileActions" style="display: inline-flex; gap: 0.45rem; align-items: center;">
+                        <button class="btn btn-primary" id="copyCodeBtn">
+                            <span class="material-symbols-outlined">content_copy</span>
+                            <span>Copy Code</span>
+                        </button>
+                        <a class="btn" id="rawFileLink" href="#" target="_blank">
+                            <span class="material-symbols-outlined">description</span>
+                            <span>Raw File</span>
+                        </a>
+                        <a class="btn" id="standaloneLink" href="../index.html">
+                            <span class="material-symbols-outlined">dashboard</span>
+                            <span>Full Portal</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="workspace-body" id="workspaceBody"></main>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>window.STANDALONE_FILE_ID = "ui/FlightManagementPanel.java";</script>
+    <script src="../data.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
